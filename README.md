@@ -23,7 +23,9 @@ module vgacontroller:
 	btnR is set to V16, and the function of btnR is the same as btnL, the only difference is btnR controls spaceship to move right.
 	fire is set to P16, which is used to control the spaceship to fire.
 	And the main function of this module is to control the VGA output, you can find the VGA protocol here:
+	
 https://en.wikipedia.org/wiki/Video_Graphics_Array
+	
 	This module also defines the mechanism of how the aliens move, how the aliens fire,
   where the board is, when to display the results pictures, etc. 
   If you are interested in creating your own game mode or level of difficulty, you can change this module to whatever you like.
@@ -76,7 +78,9 @@ Pictures preparation:
 Xilinx vivado offer a method to store static picture in RAMs or ROMs. 
 In order to use the ip Block Memory Generator, we need to create an array in .coe format. 
 This can be learned by this blog which has implemented a static picture VGA display function.
+
 https://blog.csdn.net/rzjmpb/article/details/49914197
+	
 	Blk_mem_gen_0~7 is used to initialize the start scene, background, three kinds of aliens, spaceship and win or game over result. 
   The BMG ip provided by vivado will be realized by the on-chip BRAM. 
   And I have chosen the single port RAM, because we just need to read data from the RAM and don’t need to change the data. 
