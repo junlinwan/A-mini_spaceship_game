@@ -1,0 +1,1235 @@
+
+*** Running vivado
+    with args -log vgacontroller.vds -m64 -mode batch -messageDb vivado.pb -notrace -source vgacontroller.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vgacontroller.tcl -notrace
+Command: synth_design -top vgacontroller -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3700 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:216]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:217]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 316.754 ; gain = 109.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vgacontroller' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:1]
+INFO: [Synth 8-638] synthesizing module 'debounce' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-638] synthesizing module 'spaceship' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/spaceship.v:23]
+INFO: [Synth 8-256] done synthesizing module 'spaceship' (2#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/spaceship.v:23]
+INFO: [Synth 8-638] synthesizing module 'rocket' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/rocket.v:23]
+WARNING: [Synth 8-5788] Register rocketX_reg in module rocket is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/rocket.v:81]
+WARNING: [Synth 8-5788] Register rocketY_reg in module rocket is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/rocket.v:82]
+INFO: [Synth 8-256] done synthesizing module 'rocket' (3#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/rocket.v:23]
+INFO: [Synth 8-638] synthesizing module 'speaker' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/speaker.v:24]
+INFO: [Synth 8-256] done synthesizing module 'speaker' (4#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/speaker.v:24]
+INFO: [Synth 8-638] synthesizing module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:24]
+WARNING: [Synth 8-5788] Register alienX_reg in module alien is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:83]
+WARNING: [Synth 8-5788] Register speed_reg in module alien is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:86]
+WARNING: [Synth 8-5788] Register counter_reg in module alien is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:84]
+WARNING: [Synth 8-5788] Register alienY_reg in module alien is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:109]
+INFO: [Synth 8-256] done synthesizing module 'alien' (5#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:24]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:96]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:96]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:97]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:97]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:98]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:98]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:101]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:101]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:103]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:103]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:105]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:105]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:107]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:107]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:109]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:109]
+WARNING: [Synth 8-689] width (32) of port connection 'alienfire' does not match port width (1) of module 'alien' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:111]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:111]
+INFO: [Synth 8-638] synthesizing module 'Pulse' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/pulse.v:24]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'Pulse' (6#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/pulse.v:24]
+INFO: [Synth 8-638] synthesizing module 'horizontal' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/hsync.v:1]
+INFO: [Synth 8-256] done synthesizing module 'horizontal' (7#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/hsync.v:1]
+INFO: [Synth 8-638] synthesizing module 'vertical' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/vsync.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vertical' (8#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/vsync.v:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (9#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (10#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (11#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_3' (12#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_4' (13#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_4_stub.v:6]
+WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (17) of module 'blk_mem_gen_4' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:123]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_5' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_5' (14#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_6' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_6' (15#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_7' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_7_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_7' (16#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/blk_mem_gen_7_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_7' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:126]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (17#1) [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-5788] Register startaddr_reg in module vgacontroller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:125]
+INFO: [Synth 8-256] done synthesizing module 'vgacontroller' (18#1) [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:1]
+WARNING: [Synth 8-3917] design vgacontroller has port VGA_B[3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 347.391 ; gain = 140.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 347.391 ; gain = 140.359
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'MEMSPACE' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:119]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'MEMALIEN1' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:120]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_2' instantiated as 'MEMALIEN2' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:121]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_3' instantiated as 'MEMALIEN3' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:122]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_4' instantiated as 'BACKGND' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:123]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_5' instantiated as 'GAMEOVER' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:124]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_6' instantiated as 'START' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:125]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_7' instantiated as 'WIN' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:126]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'clk_gen' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/imports/SpaceInvaders/Space_Invaders.v:178]
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp/blk_mem_gen_1_in_context.xdc] for cell 'MEMALIEN1'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp/blk_mem_gen_1_in_context.xdc] for cell 'MEMALIEN1'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_2/blk_mem_gen_2_in_context.xdc] for cell 'MEMALIEN2'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_2/blk_mem_gen_2_in_context.xdc] for cell 'MEMALIEN2'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_3/blk_mem_gen_0_in_context.xdc] for cell 'MEMSPACE'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_3/blk_mem_gen_0_in_context.xdc] for cell 'MEMSPACE'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_4/blk_mem_gen_3_in_context.xdc] for cell 'MEMALIEN3'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_4/blk_mem_gen_3_in_context.xdc] for cell 'MEMALIEN3'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_5/blk_mem_gen_5_in_context.xdc] for cell 'GAMEOVER'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_5/blk_mem_gen_5_in_context.xdc] for cell 'GAMEOVER'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_6/blk_mem_gen_6_in_context.xdc] for cell 'START'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_6/blk_mem_gen_6_in_context.xdc] for cell 'START'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_7/blk_mem_gen_7_in_context.xdc] for cell 'WIN'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_7/blk_mem_gen_7_in_context.xdc] for cell 'WIN'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_8/blk_mem_gen_4_in_context.xdc] for cell 'BACKGND'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_8/blk_mem_gen_4_in_context.xdc] for cell 'BACKGND'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_9/clk_wiz_0_in_context.xdc] for cell 'clk_gen'
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_9/clk_wiz_0_in_context.xdc] for cell 'clk_gen'
+Parsing XDC File [F:/vivado_pj/space_invader/space_invader.srcs/constrs_1/imports/SpaceInvaders/constraints.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [F:/vivado_pj/space_invader/space_invader.srcs/constrs_1/imports/SpaceInvaders/constraints.xdc:42]
+Finished Parsing XDC File [F:/vivado_pj/space_invader/space_invader.srcs/constrs_1/imports/SpaceInvaders/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/vivado_pj/space_invader/space_invader.srcs/constrs_1/imports/SpaceInvaders/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vgacontroller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vgacontroller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 673.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_9/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  F:/vivado_pj/space_invader/space_invader.runs/synth_1/.Xil/Vivado-1800-Wmiracle/dcp_9/clk_wiz_0_in_context.xdc, line 5).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clean" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'liveminus_reg' into 'alienhit_reg' [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/spaceship.v:51]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/spaceship.v:54]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/rocket.v:87]
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/vivado_pj/space_invader/space_invader.srcs/sources_1/new/alien.v:90]
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pulse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vaddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "winscreen0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "winscreen0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "livesgameover0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |vgacontroller__GB0 |           1|     30261|
+|2     |vgacontroller__GB1 |           1|      8702|
+|3     |vgacontroller__GB2 |           1|     11120|
+|4     |vgacontroller__GB3 |           1|     15216|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 75    
+	   2 Input     28 Bit       Adders := 15    
+	   2 Input     24 Bit       Adders := 25    
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 15    
+	   2 Input     11 Bit       Adders := 83    
+	   2 Input     10 Bit       Adders := 105   
+	   3 Input     10 Bit       Adders := 15    
+	   2 Input      9 Bit       Adders := 18    
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 15    
+	               24 Bit    Registers := 25    
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 39    
+	                9 Bit    Registers := 26    
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 147   
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 30    
+	   2 Input     24 Bit        Muxes := 31    
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 62    
+	   2 Input      9 Bit        Muxes := 43    
+	   3 Input      4 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 144   
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vgacontroller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 23    
+	   2 Input     10 Bit       Adders := 54    
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               10 Bit    Registers := 15    
+	                9 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 15    
+	   2 Input      9 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+Module spaceship 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rocket__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module rocket__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module rocket__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module rocket__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module rocket__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module rocket__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module speaker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module alien__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module rocket 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 7     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Pulse__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module Pulse__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module Pulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module alien__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module debounce__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module debounce__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module vertical 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module horizontal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module alien 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ALN1/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN7/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN9/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN12/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "winscreen0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN14/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN4/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN3/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN2/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN15/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN13/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN11/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN10/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN8/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN6/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN9/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN1/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN7/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN12/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DBF/count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DBR/count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DBL/count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN4/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN2/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN3/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN14/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "winscreen0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN8/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN10/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN6/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN11/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN13/speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALN15/speed" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design vgacontroller has port VGA_R[3] driven by constant 0
+WARNING: [Synth 8-3917] design vgacontroller has port VGA_G[3] driven by constant 0
+WARNING: [Synth 8-3917] design vgacontroller has port VGA_B[3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 673.535 ; gain = 466.504
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |vgacontroller__GB0 |           1|     28845|
+|2     |vgacontroller__GB1 |           1|      8680|
+|3     |vgacontroller__GB2 |           1|      9185|
+|4     |vgacontroller__GB3 |           1|     11873|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\ALN12/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ALN12/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\ALN7/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ALN7/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\ALN1/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ALN1/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/SHIP/\spaceshipY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/SHIP/\spaceshipY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/SHIP/\spaceshipY_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/SHIP/\spaceshipY_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/SHIP/\spaceshipY_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/SHIP/\spaceshipY_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/SHIP/\spaceshipY_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/SHIP/\spaceshipY_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/SHIP/\spaceshipY_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\ALN9/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\ALN9/alienY_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[8]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[7]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[6]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[5]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[4]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[3]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[2]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[1]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spaceshipY_reg[0]) is unused and will be removed from module spaceship.
+WARNING: [Synth 8-3332] Sequential element (spacehit_reg) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[0]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[1]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[2]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[3]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[4]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[5]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[6]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[7]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[8]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[9]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[10]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[11]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[12]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[13]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[14]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[15]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[16]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[17]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[18]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[19]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[20]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[21]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[22]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[23]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[24]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (playtime_reg[25]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[14]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[13]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[12]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[11]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[10]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[9]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[8]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[7]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[6]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[5]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[4]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[3]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[2]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[1]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (Gcounter_reg[0]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (alien_reg) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[15]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[14]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[13]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[12]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[11]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[10]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[9]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[8]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[7]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[6]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[5]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[4]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[3]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[2]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[1]) is unused and will be removed from module speaker.
+WARNING: [Synth 8-3332] Sequential element (counter_reg[0]) is unused and will be removed from module speaker.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\ALN5/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\ALN5/alienY_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_2/PUL3/state_reg[1]' (FDC) to 'i_2/PUL2/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_2/PUL2/state_reg[1]' (FDC) to 'i_2/PUL1/state_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\PUL1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\ALN14/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\ALN14/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\ALN3/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\ALN3/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\ALN2/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\ALN2/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\ALN4/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\ALN4/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ALN8/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ALN8/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ALN6/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ALN6/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ALN10/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ALN10/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ALN11/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ALN11/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ALN13/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ALN13/alienY_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\ALN15/alienY_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\ALN15/alienY_reg[1] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:04 . Memory (MB): peak = 673.535 ; gain = 466.504
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:54 ; elapsed = 00:01:04 . Memory (MB): peak = 673.535 ; gain = 466.504
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |vgacontroller__GB0 |           1|      7048|
+|2     |vgacontroller__GB1 |           1|      1369|
+|3     |vgacontroller__GB2 |           1|      2544|
+|4     |vgacontroller__GB3 |           1|      4945|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_25' to pin 'clk_gen/bbstub_clk_25/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen/clk_50' to pin 'clk_gen/bbstub_clk_50/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5820] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:14 . Memory (MB): peak = 731.730 ; gain = 524.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:24 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |vgacontroller__GB1 |           1|      1369|
+|2     |vgacontroller__GB3 |           1|      4945|
+|3     |vgacontroller_GT0  |           1|      9565|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 805.352 ; gain = 598.320
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:29 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:29 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_7 |         1|
+|2     |blk_mem_gen_6 |         1|
+|3     |blk_mem_gen_5 |         1|
+|4     |blk_mem_gen_4 |         1|
+|5     |blk_mem_gen_3 |         1|
+|6     |blk_mem_gen_2 |         1|
+|7     |blk_mem_gen_1 |         1|
+|8     |clk_wiz_0     |         1|
+|9     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |blk_mem_gen_2 |     1|
+|4     |blk_mem_gen_3 |     1|
+|5     |blk_mem_gen_4 |     1|
+|6     |blk_mem_gen_5 |     1|
+|7     |blk_mem_gen_6 |     1|
+|8     |blk_mem_gen_7 |     1|
+|9     |clk_wiz_0     |     1|
+|10    |CARRY4        |   749|
+|11    |LUT1          |   832|
+|12    |LUT2          |   906|
+|13    |LUT3          |   405|
+|14    |LUT4          |  1450|
+|15    |LUT5          |   754|
+|16    |LUT6          |   980|
+|17    |MUXF7         |     1|
+|18    |FDCE          |   716|
+|19    |FDPE          |   128|
+|20    |FDRE          |   829|
+|21    |IBUF          |     5|
+|22    |OBUF          |    14|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------+------------+------+
+|      |Instance    |Module      |Cells |
++------+------------+------------+------+
+|1     |top         |            |  7835|
+|2     |  ALIENRKT1 |rocket      |   247|
+|3     |  ALIENRKT2 |rocket_0    |   248|
+|4     |  ALIENRKT3 |rocket_1    |   248|
+|5     |  ALIENRKT4 |rocket_2    |   247|
+|6     |  ALIENRKT5 |rocket_3    |   248|
+|7     |  ALIENRKT6 |rocket_4    |   251|
+|8     |  ALN1      |alien       |   319|
+|9     |  ALN10     |alien_5     |   204|
+|10    |  ALN11     |alien_6     |   206|
+|11    |  ALN12     |alien_7     |   315|
+|12    |  ALN13     |alien_8     |   206|
+|13    |  ALN14     |alien_9     |   311|
+|14    |  ALN15     |alien_10    |   220|
+|15    |  ALN2      |alien_11    |   219|
+|16    |  ALN3      |alien_12    |   220|
+|17    |  ALN4      |alien_13    |   215|
+|18    |  ALN5      |alien_14    |   333|
+|19    |  ALN6      |alien_15    |   208|
+|20    |  ALN7      |alien_16    |   315|
+|21    |  ALN8      |alien_17    |   203|
+|22    |  ALN9      |alien_18    |   331|
+|23    |  DBF       |debounce    |    55|
+|24    |  DBL       |debounce_19 |    55|
+|25    |  DBR       |debounce_20 |    55|
+|26    |  HSYNC     |horizontal  |   319|
+|27    |  PUL1      |Pulse       |    65|
+|28    |  PUL2      |Pulse_21    |    65|
+|29    |  PUL3      |Pulse_22    |    67|
+|30    |  RKTSHIP   |rocket_23   |   498|
+|31    |  SHIP      |spaceship   |   251|
+|32    |  VSYNC     |vertical    |   563|
++------+------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 805.352 ; gain = 598.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 805.352 ; gain = 243.422
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 805.352 ; gain = 598.320
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 754 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:29 . Memory (MB): peak = 805.352 ; gain = 573.621
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 805.352 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 03 21:33:11 2018...

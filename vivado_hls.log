@@ -1,0 +1,24 @@
+INFO: [HLS 200-10] Running 'D:/Vivado2016.2/Vivado_HLS/2016.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user '万彦锋' on host 'wmiracle' (Windows NT_amd64 version 6.2) on Tue Apr 17 14:55:29 +0800 2018
+INFO: [HLS 200-10] In directory 'F:/vivado_pj'
+INFO: [HLS 200-10] Opening project 'F:/vivado_pj/lstm_ph'.
+INFO: [HLS 200-10] Opening solution 'F:/vivado_pj/lstm_ph/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+   Compiling E:/zybo_lab/Lab_LSTM_Philip/hlslstm_solution/lab3/main.cpp in debug mode
+E:/zybo_lab/Lab_LSTM_Philip/hlslstm_solution/lab3/main.cpp: In function 'int main()':
+E:/zybo_lab/Lab_LSTM_Philip/hlslstm_solution/lab3/main.cpp:87:31: error: invalid conversion from 'ap_private<12, true, true>::ValType {aka short int}' to 'l_int* {aka ap_int<12>*}' [-fpermissive]
+E:/zybo_lab/Lab_LSTM_Philip/hlslstm_solution/lab3/gen.h:14:13: error:   initializing argument 3 of 'void lstm(l_int*, l_int*, l_int*)' [-fpermissive]
+make: *** [obj/main.o] Error 1
+CRITICAL WARNING: [SIM 211-1] 'csim_design' failed: compilation error(s).
+4
+    while executing
+"source F:/vivado_pj/lstm_ph/solution1/csim.tcl"
+    invoked from within
+"hls::main F:/vivado_pj/lstm_ph/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

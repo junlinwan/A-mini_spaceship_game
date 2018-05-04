@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file F:\vivado_pj\space_invader\space_invader.runs\blk_mem_gen_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限
