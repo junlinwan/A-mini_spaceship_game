@@ -96,5 +96,5 @@ Change the constrains:
 	Attention: you are not required to change the input and output delay, because vivado will do this automatically for you.
 
 Demostration:
-！[Image text](https://raw.githubusercontent.com/junlinwan/A-mini_spaceship_game/master/img/demo.png)
+！[demo](https://raw.githubusercontent.com/junlinwan/A-mini_spaceship_game/master/img/demo.png)
 
